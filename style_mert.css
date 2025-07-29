@@ -170,6 +170,8 @@ h2 {
     display: flex;
     flex-direction: column;
     max-width: 1440px;
+    justify-content: center;
+    align-items: center;
 
     img {
         width: 352px;
@@ -210,9 +212,7 @@ h2 {
     display: flex;
 }
 
-.menu-png {
-    padding-right: 80px;
-}
+.menu-png {}
 
 .menus {
     display: flex;
@@ -237,9 +237,7 @@ h2 {
     }
 }
 
-.reserve-png {
-    margin-left: 80px;
-}
+.reserve-png {}
 
 .menu-three {
     width: 330px;
@@ -327,19 +325,19 @@ h2 {
     margin-bottom: 64px;
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 760px) {
     .hide-mobile {
         display: none;
     }
 
-    .bild{
+    .bild {
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 16px;
     }
 
-    .logo{
+    .logo {
         width: 40px;
         height: 40px;
     }
@@ -360,23 +358,30 @@ h2 {
         font-size: 16px;
     }
 
-    .order-dish{
-        img{
+    .our-menu {
+        img {
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    .order-dish {
+        img {
             width: 112px;
             height: 112px;
         }
     }
 
-    .how-to-order-box{
+    .how-to-order-box {
         font-size: 40px;
+
     }
 
     .menus {
-        width: 352px;
-        height: 352px;
         flex-direction: column;
         align-items: center;
         text-align: center;
+        gap: 24px;
     }
 
     #menu-one {
@@ -387,10 +392,11 @@ h2 {
     }
 
     .table {
-        width: 100%;
+        width: 50%;
         border-collapse: collapse;
 
-        th,td {
+        th,
+        td {
             font-size: 16px;
             text-align: left;
         }
@@ -399,6 +405,9 @@ h2 {
     .table-reserve {
         font-size: 32px;
         padding: 0;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
 
     .menu-revers {
@@ -439,7 +448,6 @@ h2 {
     .our {
         font-size: 40px;
     }
-
 
     #menu-one {
         font-size: 32px;
